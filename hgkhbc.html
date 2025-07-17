@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>صفحه اصلی - شرکت طراحی سایت</title>
+    <link href="bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        #back {
+            background: url(img/wider_transparent_background.png) no-repeat center;
+            background-size: cover;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg sticky-top ">
+        <div class="container ">
+            <a class="navbar-brand fw-bold fs-3" hre f="#">
+                <img src="img/WebLegender.png" alt="" height="60px">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse text-center" id="navbarNav">
+
+                <ul class="navbar-nav mx-auto ">
+
+
+
+                    <li class="nav-item order-lg-4 order-1 ">
+                        <a class="nav-link active fw-bold" href="index.html">خانه</a>
+                    </li>
+                    <li class="nav-item order-lg-3 order-2">
+                        <a class="nav-link fw-bold" href="about us.html">درباره ما</a>
+                    </li>
+                    <li class="nav-item order-lg-2 order-3">
+                        <a class="nav-link fw-bold" href="services.html">خدمات</a>
+                    </li>
+
+                    <li class="nav-item dropdown order-lg-1 order-4 ">
+                        <a class="nav-link dropdown-toggle fw-bold" href="#" data-bs-toggle="dropdown">
+                            سایر
+                        </a>
+                        <ul class="dropdown-menu ">
+                            <li><a class="dropdown-item" href="profile.html">نمونه کار ها</a></li>
+                            <li><a class="dropdown-item" href="blog.html">وبلاگ</a></li>
+                            <li><a class="dropdown-item" href="contact us.html">تماس با ما</a></li>
+                            <li><a class="dropdown-item" href="login.html">صفحه ورود و ثبت نام</a></li>
+                            <li><a class="dropdown-item" href="page 404.html">صفحه 404</a></li>
+
+
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="d-lg-flex d-grid gap-2 mt-3 mt-lg-0">
+                    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal">ورود</button>
+                    <button class="btn btn-warning" data-bs-toggle="modal"
+                        data-bs-target="#signupModal">ثبت‌نام</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- sing in-->
+    <div class="modal fade" id="loginModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title">ورود به حساب</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">ایمیل:</label>
+                            <input type="email" class="form-control" placeholder="ایمیل خود را وارد کنید">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">رمز عبور:</label>
+                            <input type="password" class="form-control" placeholder="رمز عبور">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input">
+                            <label class="form-check-label">مرا به خاطر بسپار</label>
+                        </div>
+                        <button type="submit" class="btn btn-success w-100">ورود</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- sing up -->
+    <div class="modal fade" id="signupModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-warning text-white">
+                    <h5 class="modal-title">ثبت‌نام</h5>
+                    <button type="button" class="btn-close " data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">نام کامل:</label>
+                            <input type="text" class="form-control" placeholder="نام خود را وارد کنید">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">ایمیل:</label>
+                            <input type="email" class="form-control" placeholder="ایمیل خود را وارد کنید">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">رمز عبور:</label>
+                            <input type="password" class="form-control" placeholder="رمز عبور">
+                        </div>
+               
+                        <button type="submit" class="btn btn-warning w-100">ثبت‌نام</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- content -->
+
+
+    <!-- serv -->
+    
+    <div class=" py-5 col-12 row px-2"  id="back">
+        <div class=" col-6 mt-5">
+
+            <h2 class="text-center mb-4">خدمات ما</h2>
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <div class="card text-center shadow-sm">
+                        <div class="card-body shadow">
+                            <h5 class="card-title">طراحی وب‌سایت</h5>
+                            <p class="card-text">ایجاد وب‌سایت‌های زیبا و خفن و حرفه ای با جدیدترین تکنولوژی‌ها.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">بهینه‌سازی سئو</h5>
+                            <p class="card-text">افزایش رتبه سایت شما در موتورهای جستجو و جذب بیشتر کاربران.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">اپلیکیشن موبایل</h5>
+                            <p class="card-text"> طراحی و توسعه اپلیکیشن های موبایل و اندروید با بهترین کیفیت</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+
+                    <a href="services.html" class="btn btn-outline-dark my-5 mx-5">بیشتر بدانید</a>
+                </div>
+
+            </div>
+        </div>
+<!-- footer -->
+        <div class=" py-5 col-6">
+            <h2 class="text-center mb-4">نظرات مشتریان</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <p>"خدمات عالی و پشتیبانی فوق‌العاده! بهترین تجربه طراحی سایت را با این تیم داشتم."</p>
+                            <h5 class="text-muted">⭐⭐⭐⭐⭐ ابولفضل پور بایرام</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <p>"نتایج سئوی فوق‌العاده! سایت ما در کمتر از 3 ماه به صفحه اول گوگل رسید"</p>
+                            <h5 class="text-muted">⭐⭐⭐⭐⭐ هلنا صادق پور</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <p>"یک تیم حرفه‌ای و خوش اخلاق که کارها را دقیق و باکیفیت انجام میدند."</p>
+                            <h5 class="text-muted">⭐⭐⭐⭐⭐  مارال میر فرشچیان</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <a type="button" class="btn btn-outline-dark my-5 mx-5" data-bs-toggle="modal" data-bs-target="#customerReviews">
+                        نمایش نظرات مشتریان
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+
+
+
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2025 تیم برنامه‌نویسی وب لجندر تمامی حقوق محفوظ است</p>
+    </footer>
+  
+</body>
+
+</html>

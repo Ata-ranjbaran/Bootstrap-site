@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>صفحه اصلی - شرکت طراحی سایت</title>
+    <link href="bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+
+
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg sticky-top ">
+        <div class="container ">
+            <a class="navbar-brand fw-bold fs-3" hre f="#">
+                <img src="img/WebLegender.png" alt="" height="60px">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse text-center" id="navbarNav">
+
+                <ul class="navbar-nav mx-auto ">
+
+
+
+                    <li class="nav-item order-lg-4 order-1 ">
+                        <a class="nav-link  fw-bold" href="index.html">خانه</a>
+                    </li>
+                    <li class="nav-item order-lg-3 order-2">
+                        <a class="nav-link fw-bold" href="about us.html">درباره ما</a>
+                    </li>
+                    <li class="nav-item order-lg-2 order-3">
+                        <a class="nav-link fw-bold" href="services.html">خدمات</a>
+                    </li>
+
+                    <li class="nav-item dropdown order-lg-1 order-4 ">
+                        <a class="nav-link dropdown-toggle active fw-bold" href="#" data-bs-toggle="dropdown">
+                            سایر
+                        </a>
+                        <ul class="dropdown-menu ">
+                            <li><a class="dropdown-item" href="profile.html">نمونه کار ها</a></li>
+                            <li><a class="dropdown-item" href="blog.html">وبلاگ</a></li>
+                            <li><a class="dropdown-item" href="contact us.html">تماس با ما</a></li>
+                            <li><a class="dropdown-item" href="login.html">صفحه ورود و ثبت نام</a></li>
+                            <li><a class="dropdown-item" href="page 404.html">صفحه 404</a></li>
+
+
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="d-lg-flex d-grid gap-2 mt-3 mt-lg-0">
+                    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal">ورود</button>
+                    <button class="btn btn-warning" data-bs-toggle="modal"
+                        data-bs-target="#signupModal">ثبت‌نام</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- sing in-->
+    <div class="modal fade" id="loginModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title">ورود به حساب</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">ایمیل:</label>
+                            <input type="email" class="form-control" placeholder="ایمیل خود را وارد کنید">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">رمز عبور:</label>
+                            <input type="password" class="form-control" placeholder="رمز عبور">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input">
+                            <label class="form-check-label">مرا به خاطر بسپار</label>
+                        </div>
+                        <button type="submit" class="btn btn-success w-100">ورود</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- sing up -->
+    <div class="modal fade" id="signupModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-warning text-white">
+                    <h5 class="modal-title">ثبت‌نام</h5>
+                    <button type="button" class="btn-close " data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">نام کامل:</label>
+                            <input type="text" class="form-control" placeholder="نام خود را وارد کنید">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">ایمیل:</label>
+                            <input type="email" class="form-control" placeholder="ایمیل خود را وارد کنید">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">رمز عبور:</label>
+                            <input type="password" class="form-control" placeholder="رمز عبور">
+                        </div>
+                    
+                        <button type="submit" class="btn btn-warning w-100">ثبت‌نام</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- contect -->
+    <div class="container d-flex flex-column align-items-center justify-content-center vh-100 text-center">
+        <h1 class="display-1 fw-bold text-danger">404</h1>
+        <h2 class="text-dark">صفحه مورد نظر یافت نشد</h2>
+        <p class="lead text-muted">متأسفیم! صفحه‌ای که به دنبال آن هستید وجود ندارد.</p>
+        <a href="index.html" class="btn bg-info-subtle btn-lg mt-3 show">بازگشت به صفحه اصلی</a>
+    </div>
+
+<!-- footer -->
+<div class="position-fixed bottom-0 start-0 m-4">
+    <a href="#top" class="btn btn-success  text-light rounded-pill px-4 py-3" > ↑ </a>
+    </div>
+    
+    
+    
+    <button type="button" class="btn btn-warning fw-bold position-fixed bottom-0 end-0 m-4" data-bs-toggle="modal" data-bs-target="#chatModal">
+        💬 چت آنلاین
+    </button>
+    
+    <!-- chat -->
+    <div class="modal fade" id="chatModal" tabindex="-1" aria-labelledby="chatModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 shadow">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title fw-bold" id="chatModalLabel">💬 گفت‌وگو با پشتیبانی</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex flex-column gap-2" >
+                        <div class="text-start">
+                            <span class="badge bg-secondary p-2">سلام! چطور می‌توانم کمک کنم؟</span>
+                        </div>
+                        <div class="text-end">
+                            <span class="badge bg-primary p-2">سلام! مشکلی در سایت دارم.</span>
+                        </div>
+                        <div class="text-start">
+                            <span class="badge bg-secondary p-2">لطفا مشکل خود را توضیح دهید.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <input type="text" class="form-control" placeholder="پیام خود را بنویسید..." >
+                    <button class="btn btn-success" >📤 ارسال</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+<footer class="bg-dark text-white text-center py-4">
+    <p>&copy; 2025 تیم برنامه‌نویسی وب لجندر تمامی حقوق محفوظ است</p>
+</footer>
+
+</body>
+
+</html>
